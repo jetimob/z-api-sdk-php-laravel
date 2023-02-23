@@ -3,7 +3,11 @@
 namespace Jetimob\ZApi\Facade;
 
 use Illuminate\Support\Facades\Facade;
+use Jetimob\ZApi\Api\Message\MessageApi;
 
+/**
+ * @method static MessageApi message()
+ */
 class ZApi extends Facade
 {
     /**
