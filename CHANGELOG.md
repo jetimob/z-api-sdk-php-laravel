@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/jetimob/z-api-sdk-php-laravel/compare/v1.1.2...v1.2.0) (2023-11-07)
+
+
+### Features
+
+* Adiciona requisições referentes às instâncias e as filas ([742ec8f](https://github.com/jetimob/z-api-sdk-php-laravel/commit/742ec8fa10be12d723ee726dfbe87566e5f7e0c5))
+
 ### 1.1.2 (2023-02-23)
 
 ### Bug Fixes
