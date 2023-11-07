@@ -11,8 +11,6 @@ class MessageLink extends Entity
     protected string $title;
     protected string $linkDescription;
     protected ?int $delayMessage = null;
-    protected ?int $delayTyping = null;
-    protected ?string $linkType = null;
 
     /**
      * @return string
@@ -140,50 +138,22 @@ class MessageLink extends Entity
         return $this;
     }
 
-    /**
-     * @return int|null
-     */
-    public function getDelayTyping(): ?int
-    {
-        return $this->delayTyping;
-    }
-
-    /**
-     * @param int|null $delayTyping
-     * @return MessageLink
-     */
-    public function setDelayTyping(?int $delayTyping): MessageLink
-    {
-        $this->delayTyping = $delayTyping;
-        return $this;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getLinkType(): ?string
-    {
-        return $this->linkType;
-    }
-
-    /**
-     * @param string|null $linkType
-     * @return MessageLink
-     */
-    public function setLinkType(?string $linkType): MessageLink
-    {
-        $this->linkType = $linkType;
-        return $this;
-    }
-
-    public static function new(string $phone, string $message, string $title, string $image, string $linkUrl, string $linkDescription): self
-    {
+    public static function new(
+        string $phone,
+        string $message,
+        string $title,
+        string $image,
+        string $linkUrl,
+        string $linkDescription,
+        ?int $delayMessage = null
+    ): self {
         return (new static())
-            ->setPhone($phone)
             ->setMessage($message)
             ->setTitle($title)
+            ->setPhone($phone)
             ->setImage($image)
             ->setLinkUrl($linkUrl)
+            ->setDelayMessage($delayMessage)
             ->setLinkDescription($linkDescription);
     }
 }

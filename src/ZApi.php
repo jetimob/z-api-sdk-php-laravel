@@ -4,7 +4,6 @@ namespace Jetimob\ZApi;
 
 use Jetimob\Http\Contracts\HttpProviderContract;
 use Jetimob\Http\Http;
-use Jetimob\ZApi\Api\Message\MessageApi;
 use RuntimeException;
 
 class ZApi implements HttpProviderContract

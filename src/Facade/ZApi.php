@@ -2,11 +2,15 @@
 
 namespace Jetimob\ZApi\Facade;
 
-use Illuminate\Support\Facades\Facade;
+use Jetimob\ZApi\Api\Instance\InstanceApi;
 use Jetimob\ZApi\Api\Message\MessageApi;
+use Jetimob\ZApi\Api\Queue\QueueApi;
+use Illuminate\Support\Facades\Facade;
 
 /**
+ * @method static InstanceApi instance()
  * @method static MessageApi message()
+ * @method static QueueApi queue()
  */
 class ZApi extends Facade
 {

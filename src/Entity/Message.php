@@ -7,7 +7,6 @@ class Message extends Entity
     protected string $phone;
     protected string $message;
     protected ?int $delayMessage = null;
-    protected ?int $delayTyping = null;
 
     /**
      * @return string
@@ -60,24 +59,6 @@ class Message extends Entity
     public function setDelayMessage(?int $delayMessage): Message
     {
         $this->delayMessage = $delayMessage;
-        return $this;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getDelayTyping(): ?int
-    {
-        return $this->delayTyping;
-    }
-
-    /**
-     * @param int|null $delayTyping
-     * @return Message
-     */
-    public function setDelayTyping(?int $delayTyping): Message
-    {
-        $this->delayTyping = $delayTyping;
         return $this;
     }
 
