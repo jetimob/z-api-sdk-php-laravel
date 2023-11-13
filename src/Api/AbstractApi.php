@@ -22,6 +22,8 @@ abstract class AbstractApi extends \Jetimob\Http\AbstractApi
             $this->instanceId = $this->http->getConfig('default_instance_id');
         }
 
+        $headers['Client-Token'] = $this->http->getConfig('security_token_value');
+
         $token = $this->http->getConfig('bearer_token_value');
         $path = "/instances/$this->instanceId/token/$token/$path";
 

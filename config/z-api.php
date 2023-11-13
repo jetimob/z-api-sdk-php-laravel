@@ -17,6 +17,8 @@ return [
         // z-api's instance id
         'default_instance_id' => env('ZAPI_INSTANCE_ID', ''),
 
+        'security_token_value' => env('ZAPI_SECURITY_TOKEN', ''),
+
         // guzzle configuration, given to Guzzle instance as is
         'guzzle' => [
             'base_uri' => env('ZAPI_BASE_URI', 'https://api.z-api.io/'),
