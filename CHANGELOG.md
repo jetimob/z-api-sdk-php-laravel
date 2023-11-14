@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/jetimob/z-api-sdk-php-laravel/compare/v1.1.2...v1.2.0) (2023-11-14)
+
+
+### Features
+
+* Adiciona requisições referentes às instâncias e as filas ([742ec8f](https://github.com/jetimob/z-api-sdk-php-laravel/commit/742ec8fa10be12d723ee726dfbe87566e5f7e0c5))
+* Implementa token de segurança ([d4eb3f8](https://github.com/jetimob/z-api-sdk-php-laravel/commit/d4eb3f8ba25487b23a26218e6d378c60e78a0829))
+
 ## [1.2.0](https://github.com/jetimob/z-api-sdk-php-laravel/compare/v1.1.2...v1.2.0) (2023-11-07)
 
 
