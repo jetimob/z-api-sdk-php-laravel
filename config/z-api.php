@@ -52,6 +52,8 @@ return [
     |
     */
     'api_impl' => [
+        'instance' => \Jetimob\ZApi\Api\Instance\InstanceApi::class,
         'message' => \Jetimob\ZApi\Api\Message\MessageApi::class,
+        'queue' => \Jetimob\ZApi\Api\Queue\QueueApi::class,
     ],
 ];
